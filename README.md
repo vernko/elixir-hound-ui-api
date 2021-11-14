@@ -12,7 +12,10 @@ This challenge is to showcase your skill, so it is recommended to spend time you
 ## Getting Up and Running
 
 - Download the latest version of chromedriver and ensure that your version of chrome is up to date as well
-- Run chromedriver
+    - For example, if browser is version 95(my current version), use version 95 of chromedriver
+- Run chromedriver using the terminal
+    - Remember the location of the chromedriver, may need to run something like ```$ ./Projects/chromedriver``` to start chromedriver.
+    - Chromedriver has to be running in order to run the tests.
 - In a different terminal window or tab, cd into the homework project and you can now execute the command "mix test" and it will run all of the test files in the "test" folder
 
 

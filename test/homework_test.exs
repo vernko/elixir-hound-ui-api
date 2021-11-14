@@ -6,7 +6,8 @@ defmodule HomeworkTest do
   # Start hound session and destroy when tests are run
   hound_session()
 
-  test "goes to google" do
-    navigate_to "http://google.com"
+  test "goes to the internet" do
+    navigate_to "https://the-internet.herokuapp.com/"
+    assert("The Internet" == page_title())
   end
 end
