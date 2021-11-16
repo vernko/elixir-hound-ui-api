@@ -6,7 +6,7 @@ defmodule KeyPressesTest do
   #Start hound session and destroy when tests are run
   hound_session()
 
-  test "enter backspace" do
+  test "enter backspace using send_keys" do
     navigate_to "https://the-internet.herokuapp.com/"
     link = find_element(:link_text, "Key Presses")
     click(link)
@@ -17,7 +17,7 @@ defmodule KeyPressesTest do
     assert visible_text({:id, "result"}) == "You entered: BACK_SPACE"
   end
 
-  test "enter 'typing all the stuff'" do
+  test "enter 'typing all the stuff' using send_text" do
     navigate_to "https://the-internet.herokuapp.com/"
     link = find_element(:link_text, "Key Presses")
     click(link)
