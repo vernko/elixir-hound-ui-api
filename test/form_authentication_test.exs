@@ -6,6 +6,8 @@ defmodule FormAuthenticationTest do
   # Start hound session and destroy when tests are run
   hound_session()
 
+  @tag :form
+  @tag :ui
   test "can successfully login" do
     navigate_to "https://the-internet.herokuapp.com/"
     link = find_element(:link_text, "Form Authentication")
@@ -22,6 +24,8 @@ defmodule FormAuthenticationTest do
     assert element_displayed?({:class, "success"})
   end
 
+  @tag :form
+  @tag :ui
   test "unsuccessful login message appears" do
     navigate_to "https://the-internet.herokuapp.com/"
     link = find_element(:link_text, "Form Authentication")
