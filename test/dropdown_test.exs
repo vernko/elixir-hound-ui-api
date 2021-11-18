@@ -6,8 +6,6 @@ defmodule DropdownTest do
   #Start hound session and destroy when tests are run
   hound_session()
 
-  #Create select methods for text, value, index
-
   test "select dropdown" do
     navigate_to "https://the-internet.herokuapp.com/"
     link = find_element(:link_text, "Dropdown")
