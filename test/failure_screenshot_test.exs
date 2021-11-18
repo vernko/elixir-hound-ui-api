@@ -1,4 +1,4 @@
-defmodule DropdownTest do
+defmodule FailureScreenshotTest do
   #Import Helpers
   use Hound.Helpers
   use ExUnit.Case
@@ -6,7 +6,7 @@ defmodule DropdownTest do
   #Start hound session and destroy when tests are run
   hound_session()
 
-  @tag :dropdown
+  @tag :fail_test
   @tag :ui
   test "select dropdown" do
     try do
@@ -14,7 +14,7 @@ defmodule DropdownTest do
       link = find_element(:link_text, "Dropdown")
       click(link)
 
-      find_element(:css, "#dropdown option[value='1']") |> click()
+      find_element(:css, "#dropdown option[value='2']") |> click()
       sel_ele = find_element(:css, "[selected='selected']")
       assert visible_text(sel_ele) == "Option 1"
     rescue
