@@ -5,10 +5,10 @@
 - Run chromedriver using the terminal
     - Remember the location of the chromedriver, may need to run something like ```$ ./Projects/chromedriver``` to start chromedriver.
     - Chromedriver has to be running in order to run the tests.
-- In a different terminal window or tab, cd into the homework project and you can now execute the command "mix test" and it will run all of the test files in the "test" folder
+- In a different terminal window or tab, cd into the project and you can now execute the command "mix test" and it will run all of the test files in the "test" folder
 
 ## Running Tests
-As mentioned above, you can run the entire suite of test using ```mix test```. There are ways that you can run specific tests or test files. This can be done by the following:
+As mentioned above, you can run the entire suite of test using ```mix test```. You can also run specific tests or test files. This can be done by the following:
 - File Name
 - Tags
 
